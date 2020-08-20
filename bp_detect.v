@@ -17,10 +17,10 @@ module bp_detect (
  reg   [2:0]     curr_state ;
  reg   [2:0]     Next_state ;
  
-  parameter	 S0  = 2'b00,				            	//IDLE 
-         		 S1  = 2'b01,                    //0
-             S2  = 2'b10,                    //00   
-				     S3  = 2'b11;                    //001
+  parameter	S0  = 2'b00,	                //IDLE 
+                S1  = 2'b01,                    //0
+                S2  = 2'b10,                    //00   
+	        S3  = 2'b11;                    //001
 				
  always @(posedge clk )
  begin
